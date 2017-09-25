@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta content='website' property='og:type'>
+	<meta content='http://ssgeye.com' property='og:url'>
+	<meta content='카카오톡' property='og:title'>
+	<meta content='카카오톡 따라서 만들기' property='og:description'>
+	<meta content='http://postfiles5.naver.net/MjAxNzA2MzBfMzAg/MDAxNDk4ODA5MDY2MjMy.CD56YZcIm2ZDDHrWyz-snjoa8ugY77SV9ZqNzbyzoVEg.WECgh4_oyQPJPGOyRSEFt-Wj33lppDjw_uyUlmq0E_4g.PNG.ssongmin92/I38A8255.png?type=w966' property='og:image'>
+
+	<link rel="stylesheet" href="../kakao/css/common.css" type="text/css">
+	<link rel="stylesheet" href="../kakao/css/kakao.css" type="text/css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+  <script src="../kakao/js/jquery.scrollstop.min.js"></script>
+  <script src="../kakao/js/jquery.event.swipe.js"></script>
+  <script src="../kakao/js/app.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<span class="header_management" data-value="manage">
+				관리
+			</span>
+			<h2 class="header_title">
+				친구 <em class="friend_count">227</em>
+			</h2>
+			<span class="header_setting">
+				<i class="fa fa-cog fa-lg"></i>
+			</span>
+		</header>
+		<section class="friends">
+			<div class="chat_search">
+				<!-- <i class="chat_search_icon fa fa-search"></i> -->
+				<input type="text" placeholder="친구, 채팅방, 플러스친구 검색">
+			</div>
+			<div class="friend_divide">
+				내 프로필
+			</div>
+			<div id="myList" class="friend">
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/333333.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">잔돈이</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		안녕 난 잔돈이야
+					 	</span>
+				 	</div>
+			 	</div>
+			</div>
+			<div class="friend_divide">
+				추천친구
+			</div>
+			<div class="friend">
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/newfriend.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">새로운 친구를 만나보세요!</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_plus_count">
+					 		15 <i class="fa fa-angle-right"></i>
+					 	</span>
+				 	</div>
+				 </div>
+			</div>
+			<div class="friend_divide">
+				그룹
+			</div>
+			<div class="friend">
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/plusfriend.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">플러스친구</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2"> 
+				 		<span class="friend_plus_count">
+					 		14 <i class="fa fa-angle-right"></i>
+					 	</span>
+				 	</div>
+			 	</div>
+			</div>
+			<div class="friend_divide">
+				친구
+			</div>
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/444444.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">백비</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		박하이 귀염
+					 	</span>
+				 	</div>
+				</div>
+				<div class="friend_hide">
+					숨김
+				</div>
+				<div class="friend_cutoff">
+					차단
+				</div>
+			</div>
+
+			
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/444444.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">그누</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		공덕매니아
+					 	</span>
+				 	</div>
+				</div>
+				<div class="friend_hide">
+					숨김
+				</div>
+				<div class="friend_cutoff">
+					차단
+				</div>
+			</div>
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/444444.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">행주</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		일본 살아욤
+					 	</span>
+				 	</div>
+				</div>
+				<div class="friend_hide">
+					숨김
+				</div>
+				<div class="friend_cutoff">
+					차단
+				</div>
+			</div>
+
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/444444.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">귀도훈</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		귀 아파
+					 	</span>
+				 	</div>
+				</div>
+				<div class="friend_hide">
+					숨김
+				</div>
+				<div class="friend_cutoff">
+					차단
+				</div>
+			</div>
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite friend_favorite-show">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap friend_wrap-right">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/111111.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">강신익과장님</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		급한 메시지는 문자 바랍니다!
+					 	</span>
+				 	</div>
+				 </div>
+				 <div class="friend_hide">
+					숨김
+				</div>
+				<div class="friend_cutoff">
+					차단
+				</div>
+			</div>
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap friend_wrap-left2">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/111111.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">ABC마트</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		세일합니다!
+					 	</span>
+				 	</div>
+				</div>
+				<div class="friend_hide friend_hide-show2">
+					숨김
+				</div>
+				<div class="friend_cutoff friend_cutoff-show">
+					차단
+				</div>
+			</div>
+			<div id="friendList" class="friend">
+				<div class="friend_minus">
+					<span class="friend_minus_circle">
+						<i class="fa fa-minus"></i>
+					</span>
+				</div>
+				<div class="friend_favorite">
+					<i class="fa fa-star-o fa-2x"></i>
+				</div>
+				<div id="friendWrap" class="friend_wrap">
+				 	<div class="friend_img">
+				 		<img src="/kakao/images/111111.png" alt="" class="friend_avatar">
+				 	</div>
+				 	<div class="friend_content1">
+				 		<div class="friend_title">
+				 			<span class="friend_title_s">강신익과장님</span>
+				 		</div>
+				 	</div>
+				 	<div class="friend_content2">
+				 		<span class="friend_mind">
+					 		여의녀
+					 	</span>
+				 	</div>
+				 </div>
+			 	<div class="friend_hide">
+					숨김
+				</div>
+				<div class="friend_cutoff">
+					차단
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<a href="/kakao/friend.html" class="footer_icon footer_icon-selected">
+				<i class="fa fa-user fa-2x"></i>
+				<span class="footer_text">친구</span>
+			</a>
+			<a href="/kakao/chat.html" class="footer_icon">
+				<i class="fa fa-comment fa-2x"></i>
+				<span class="footer_text">채팅</span>
+				<span class="footer_count">2</span>
+			</a>
+			<a href="/kakao/channel.html" class="footer_icon">
+				<i class="fa fa-newspaper-o fa-2x"></i>
+				<span class="footer_text">채널</span>
+			</a>
+			<a href="/kakao/more.html" class="footer_icon">
+				<i class="fa fa-ellipsis-h fa-2x"></i>
+				<span class="footer_text">더보기</span>
+				<span class="footer_count">N</span>
+			</a>
+		</footer>
+	</div>
+	<div class="profile">
+		<div class="profile_cover">
+			<div class="profile_header">
+				<span class="profile_close">
+					<i class="fa fa-close fa-2x"></i>
+				</span>
+				<span class="profile_story_thumnail">
+				</span>
+			</div>
+			<div class="profile_footer">
+				<span class="profile_present"></span>
+				<span class="profile_pay"></span>
+				<span class="profile_favorite"></span>
+			</div>
+		</div>		
+		<div class="profile_info">
+			<h2 class="profile_name">배윤희</h2>
+			<span class="profile_tel">010-2922-0006</span>
+			<div class="profile_function_wrap">
+				<div class="profile_function">
+					<span class="profile_function_icon">
+						<i class="fa fa-comment fa-2x"></i>
+					</span>
+					<span class="profile_function_text">1:1채팅</span>
+				</div>
+				<div class="profile_function">
+					<span class="profile_function_icon">
+						<i class="fa fa-phone fa-2x"></i>
+					</span>
+					<span class="profile_function_text">무료통화</span>
+				</div>
+			</div>
+			<div class="profile_image"></div>
+		</div>
+	</div>
+	<div class="chat_btn_list">
+		<div class="chat_btn">
+			오픈채팅 <span><i class="fa fa-comments-o fa-2x"></i></span>
+		</div>
+		<div class="chat_btn">비밀채팅 <span><i class="fa fa-lock fa-2x"></i></span></div>
+		<div class="chat_btn">일반채팅 <span><i class="fa fa-commenting fa-2x"></i></span></div>
+	</div>
+	<div class="chat_more">
+	 	<i class="fa fa-commenting fa-2x"></i>
+	</div>
+	<div class="chat_back"></div>
+
+	<div class="firstword_search">
+		<ul>
+			<li><i class="fa fa-search"></i></li>
+			<li><i class="fa fa-plus"></i></li>
+		</ul>
+	</div>
+</body>
+</html>
